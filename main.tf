@@ -1,6 +1,6 @@
 resource "juju_application" "ubuntu_pro" {
-  name  = var.app_name
-  model = var.juju_model_name
+  name       = var.app_name
+  model_uuid = var.juju_model_uuid
 
   charm {
     name     = "ubuntu-pro"
